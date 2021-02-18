@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'coviddata.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'c19usersdb',
+        'NAME': 'usersdb',
         'USER': 'amiranda',
         'PASSWORD': '1234',
         'HOST': 'localhost',
