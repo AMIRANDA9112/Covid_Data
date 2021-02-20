@@ -13,8 +13,9 @@ function App() {
 
   return (
     <div className="App">
-      <Login userLogin={userLogin}/>
-      <Books token={token}/>
+        <h1>Covid Data</h1>
+        <Login userLogin={userLogin}/>
+        <Books token={token}/>
     </div>
   );
 }

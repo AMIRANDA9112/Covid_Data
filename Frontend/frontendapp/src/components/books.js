@@ -27,11 +27,42 @@ class Books extends Component {
   render() {
     return (
       <div>
-        <h1>Books</h1>
+        <h2>Select Your Country and Load</h2>
+
+        <h3>At today</h3>
+
         { this.state.books.map( book => {
-          return <h3 key={book.id}>{book.title}</h3>
+          return (
+              <h3 key={book.id}>{book.country}</h3>
+              )
         })}
-        <button onClick={this.loadBooks}>Load Books</button>
+
+        <h4>Confirmed</h4>
+
+
+        { this.state.books.map( book => {
+          return (
+              <h3 key={book.id}>{book.infected}</h3>
+              )
+        })}
+
+        <h4>Recovered</h4>
+
+        { this.state.books.map( book => {
+          return (
+              <h3 key={book.id}>{book.recovered}</h3>
+              )
+        })}
+
+        <h4>Death</h4>
+
+        { this.state.books.map( book => {
+          return (
+              <h3 key={book.id}>{book.deaths}</h3>
+              )
+        })}
+
+        <button onClick={this.loadBooks}>Load Data</button>
       </div>
     );
   }

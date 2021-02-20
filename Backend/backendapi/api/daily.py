@@ -12,7 +12,6 @@ for i in range(7):
 
     date = datetime.datetime.strftime(date, '%Y-%m-%d')
 
-
     dater = date[:10]
 
     querystring = {"date": dater}
