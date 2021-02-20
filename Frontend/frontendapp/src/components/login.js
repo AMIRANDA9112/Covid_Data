@@ -44,7 +44,7 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <h1>Login user form</h1>
+        <h1>Login And Register</h1>
 
         <label>
           Username:

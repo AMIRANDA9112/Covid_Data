@@ -27,11 +27,11 @@ class Books extends Component {
   render() {
     return (
       <div>
-        <h1>Books</h1>
+        <h1>Covid Data Acces</h1>
         { this.state.books.map( book => {
           return <h3 key={book.id}>{book.title}</h3>
         })}
-        <button onClick={this.loadBooks}>Load Books</button>
+        <button onClick={this.loadBooks}>Load Data</button>
       </div>
     );
   }
