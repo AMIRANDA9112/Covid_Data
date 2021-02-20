@@ -10,7 +10,7 @@ for l in data:
 
     code = l.get("name")
 
-    if code == "Afghanistan":
+    if code == "Argentina":
 
         querystring = {"code": l.get("alpha2code")}
         headers = {

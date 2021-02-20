@@ -2,20 +2,16 @@ import requests
 import datetime
 import time
 
+url = "https://covid-19-data.p.rapidapi.com/report/totals"
 
-def las_seven():
+sd = "2020-07-21"
+date = datetime.datetime.strptime(sd, '%Y-%m-%d')
 
-    url = "https://covid-19-data.p.rapidapi.com/report/totals"
-
-    sd = "2020-07-21"
-    date = datetime.datetime.strptime(sd, '%Y-%m-%d')
-
-    for i in range(7):
+for i in range(7):
     date = date - datetime.timedelta(days=1)
 
     date = datetime.datetime.strftime(date, '%Y-%m-%d')
 
-    print(date[:10])
 
     dater = date[:10]
 
@@ -30,5 +26,6 @@ def las_seven():
 
     print(response.text)
 
+    date = datetime.datetime.strptime(date, '%Y-%m-%d')
 
     time.sleep(1)

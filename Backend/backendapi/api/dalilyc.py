@@ -15,7 +15,7 @@ for m in data:
 
     code = m.get("name")
 
-    if code == "Afghanistan":
+    if code == "Argentina":
 
         for l in data:
             day = datetime.datetime.strftime(day, '%Y-%m-%d')
